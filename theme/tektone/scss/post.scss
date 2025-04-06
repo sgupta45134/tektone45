@@ -1,0 +1,323 @@
+/***** Initial Start Here *****/
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500; 
+    color: #212529; 
+    background: #fff;
+}
+a, .btn-link { 
+    color: #06a1ac; 
+    transition: all 0.3s; 
+    cursor: pointer;
+    &:hover, &:focus { 
+        color: #000;
+    }
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #000;
+}
+h1, .h1, h2, .h2 {
+    font-weight: 800;
+}
+h3, .h3 {
+    font-weight: 700;
+}
+h4, .h4 {
+    font-weight: 600;
+}
+h5, .h5 {
+    font-weight: 500;
+}
+h6, .h6 {
+    font-weight: 400;
+}
+/***** End Here *****/
+
+/***** Header / Footer Start Here *****/
+.global-header {
+    background-color: $header-bg;
+    color: #000;
+    &.fixed-top {
+        height: 72px;
+        padding: .5rem;
+    }
+    .mh-logo {
+        margin-right: 0.5rem;
+        img {
+            max-height: 54px;
+            margin-left: 0.5rem;
+        }
+    }
+    .primary-navigation {
+        .navigation {
+            height: 72px;
+            .nav-link {
+                color: #000;
+                height: 71px;
+                &.active {
+                    border-bottom-color: #06a1ac;
+                }
+                &:hover, &:focus, &.active {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            color: #000;
+        }
+    }
+    .userinitials {
+        background-color: #fff;
+    }
+    .custom-switch {
+        .custom-control-label {
+            &::before {
+                background-color: #000;
+            }
+            &::after {
+                background-color: #fff;
+            }
+        }
+        .custom-control-input:disabled:checked~.custom-control-label::before {
+            background-color: #000;
+        }
+    }
+}
+.secondary-navigation {
+    padding-left: 15px;
+    padding-right: 15px;
+    .navigation {
+        margin: 0;
+    }
+}
+.page-footer {
+    table {
+        th {
+            background: transparent;
+        }
+    }
+}
+/***** End Here *****/
+
+/***** Content Start Here *****/
+#page.drawers {
+    margin-top: 72px;
+}
+.course-section {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    .section-item {
+        border-radius: 0;
+        box-shadow: 3px 0px 6px rgb(105 97 97 / 10%), 0 3px 6px rgb(0 0 0 / 10%);
+    }
+    .sectionname {
+        font-weight: 700;
+    }
+}
+.btn.btn-icon.icons-collapse-expand {
+    color: #06a1ac;
+    &:hover {
+        outline-color: #06a1ac;
+    }
+}
+.course-info-metadata  {
+    div {
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+        .fa {
+            margin-right: 5px; 
+            color: #06a1ac;
+        }
+    }
+    &.incourse-area {
+        padding-left: 15px; 
+        padding-right: 15px;
+    }
+}
+/***** End Here *****/
+
+/***** Login Start Here *****/
+.pagelayout-login {
+    background-color: $login-bg; 
+    background-size: cover; 
+    background-image: url([[pix:theme_tektone|loginpageimg]]); 
+    background-position: center;
+    #page {
+        background: none;
+    }
+    &::after {
+        content: ""; position: fixed; left: 0; right: 0; top: 0; bottom: 0; 
+        width: 100%; height: 100%; background-color: rgba(0,0,0,.4);
+    }
+    #page-wrapper {
+        position: relative;
+        z-index: 1;
+    }
+    .login-logo {
+        margin-bottom: 1.5rem;
+        img {
+            max-height: 78px;
+        }
+    }
+}
+.login-container {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, .85);
+    box-shadow: 0 -4px 11px 5px rgba(0, 0, 0, .2);
+    .login-divider {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-top-color: transparent;
+    }
+}
+.login-form-forgotpassword {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.login-form-submit {
+    display: flex;
+    justify-content: end;
+    .btn {
+        background-color: #f7931e; 
+        border-color: #000;
+        font-weight: 800;
+    }
+}
+/***** End Here *****/
+
+/***** Block Start Here *****/
+.drawer-toggles  {
+    .drawer-toggler {
+        top: calc(72px + 0.7rem);
+        .btn {
+            background-color: #06a1ac;
+            color: #fff;
+        }
+    }
+}
+.drawer {    
+    &.drawer-left {
+        background-color: #e5e5e5;
+    }
+    &.drawer-right {
+        background-color: #fff;
+    }
+    &.drawer-left, &.drawer-right {
+        .drawertoggle {
+            font-size: 18px;
+            padding: 0.5rem 0.75rem;
+        }
+    }
+}
+.block {    
+    &.card {
+        background-color: $block-bg;
+        border-radius: 0;
+        border: none;
+        .card-title {
+            font-weight: 700;
+        }
+    }
+}
+#block-region-content .block {
+    background-color: #fff;
+}
+.courseindex {
+    .courseindex-item {
+        border-radius: 0;
+        &.pageitem {
+            background-color: #d1d1d1;
+            color: #000;
+            a {
+                color: #000;
+            }
+        }
+        &:hover, &:focus {
+            .pageitem, &.pageitem {
+                background-color: #d1d1d1;
+                color: #000;
+                .courseindex-link, .courseindex-chevron {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+/***** End Here *****/
+
+/***** Table Start Here *****/
+.table th, .generaltable th {
+    padding: 1rem 0.65rem;
+}
+.table td, .generaltable td {
+    padding: .65rem;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+.generaltable.table-sm th, .generaltable.table-sm td {
+    padding: .5rem;
+}
+.generaltable {
+    border: 1px solid #dee2e6;
+}
+.generaltable th, .generaltable td {
+    border: 1px solid #dee2e6;
+}
+/***** End Here *****/
+
+/***** Form Button Menu Start Here *****/
+.dropdown-item.active, .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus, 
+.dropdown-item:focus-within, .maincalendar .calendarmonth td.today .day-number-circle {
+    background-color: #06a1ac;
+}
+.simplesearchform .btn {
+    padding: 0.35rem 0.5rem;
+}
+.btn, .form-control {
+    border-radius: 0.25rem !important;
+}
+.btn-primary {
+    background-color: $primarybtn-bg; 
+    border-color: $primarybtn-bg;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
+    background-color: $primarybtn-bg; 
+    border-color: $primarybtn-bg;
+}
+/***** End Here *****/
+
+/***** Custom Start Here *****/
+.moremenu {
+    .nav-link {
+        border-bottom-width: 4px;
+        &.active {
+            border-bottom-color: #06a1ac;
+        }
+    }
+}
+/***** End Here *****/
+
+/**** Custom Scrollbar Start Here ****/
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}  
+::-webkit-scrollbar-thumb {
+    background: #888;
+}  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/**** Custom Scrollbar End ****/

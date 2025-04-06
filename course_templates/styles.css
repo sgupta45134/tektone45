@@ -1,0 +1,765 @@
+.bs-stepper .step-trigger.disabled,
+.bs-stepper .step-trigger:disabled {
+    opacity:1;
+}
+#page-local-course_templates-index #region-main h2{
+    font-size: 16px!important;
+    line-height: 27px!important;
+    font-weight: 700!important;
+    color: #333!important;
+    text-transform: capitalize!important;
+}
+.dark-theme#page-local-course_templates-index #region-main h2{
+    color: #bfbfbf !important;
+}
+#page-local-course_templates-index #region-main{
+    background-color: #fff ;
+    padding: 24px 16px !important;
+    border: 1px solid #e7e7e7  !important;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dark-theme#page-local-course_templates-index #region-main{
+    background-color: #161616;
+    border: 1px solid #292929 !important;
+
+}
+#page-local-course_templates-index .modal-dialog .modal-content{
+    background-color: #fff !important;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 10px !important;
+}
+#page-local-course_templates-index .modal-dialog .modal-content > p{
+    font-size: 13px;
+}
+#page-local-course_templates-index .modal-header button.close{
+    top: 46px;
+    right: 40px;
+}
+#page-local-course_templates-index .modal-header button.close i.wid-icon-close-x {
+    color: #333 !important;
+    opacity: 1;
+    font-size: 10px;
+}
+.dark-theme#page-local-course_templates-index .modal-header button.close i.wid-icon-close-x {
+    color: #bfbfbf !important;
+}
+#page-local-course_templates-index .modal-dialog .modal-content .modal-header {
+    background-color: #fff !important;
+    padding-top: 0 !important;
+    border-bottom: 1px solid transparent;
+}
+.dark-theme#page-local-course_templates-index .modal-dialog .modal-content .modal-header {
+    background-color: #161616 !important;
+}
+
+#page-local-course_templates-index .modal-dialog .modal-content .modal-header h5.modal-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #484848 !important;
+    text-transform: capitalize;
+    padding: 34px 30px 20px;
+}
+.dark-theme#page-local-course_templates-index .modal-dialog .modal-content .modal-header h5.modal-title{
+    color: #bfbfbf !important;
+}
+#page-local-course_templates-index .modal-dialog .modal-content .modal-body {
+    padding: 0 30px 30px !important;
+    background-color: #ffffff!important;
+}
+.dark-theme#page-local-course_templates-index .modal-dialog .modal-content .modal-body {
+    padding: 0 30px 30px !important;
+    background-color: #161616 !important;
+}
+/* table header start */
+#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header{
+    border: 1px solid #e7e7e7 !important;
+    background-color: #FAFBFC;
+    padding: 14px 16px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header{
+    background-color: #161616;
+    border: 1px solid #292929 !important;
+    margin-left: -17px;
+    margin-right: -17px;
+}
+#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .step-trigger{
+    padding: 0 !important;
+}
+#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .line{
+    flex: unset;
+    min-width: unset;
+    max-width: unset;
+    min-height: unset;
+    margin: 0 20px;
+    background-color: transparent;
+}
+#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .line::after{
+    content: "\f105";
+    font-family: 'FontAwesome';
+    color: #686868;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .line::after{
+    color: #898989;
+}
+
+#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .step .bs-stepper-circle{
+    font-size: 14px;
+    padding: 0;
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #484848;
+    background-color: #C1DBE9;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .step .bs-stepper-circle{
+    background-color: #113649;
+    color: #bfbfbf;
+}
+#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .bs-stepper-label{
+    font-size: 14px;
+    color: #686868;
+}
+.dark-theme#page-local-course_templates-index  .custom-course-template #region-main .bs-stepper .bs-stepper-header .bs-stepper-label{
+    color: #898989;
+}
+#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .step.active .bs-stepper-circle{
+    background-color: #1077A9 !important;
+    color: #fff !important;
+}
+.dark-theme#page-local-course_templates-index  .custom-course-template #region-main .bs-stepper .bs-stepper-header .step.active .bs-stepper-circle{
+    background-color: #2885B2 !important;
+    color: #161616 !important;
+}
+#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .step.active .bs-stepper-label{
+    color: #1077A9  !important;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .step.active .bs-stepper-label{
+    color: #2885B2 !important;
+}
+.custom-course-generaltable2 .bs-stepper .bs-stepper-header .step:first-child  .bs-stepper-circle,  .custom-course-generaltable3 .bs-stepper .bs-stepper-header .step .bs-stepper-circle{
+    color: #fff !important;
+    background-color: #66a8c8 !important;
+}
+.dark-theme#page-local-course_templates-index .custom-course-generaltable2 .bs-stepper .bs-stepper-header .step:first-child  .bs-stepper-circle,.dark-theme#page-local-course_templates-index  .custom-course-generaltable3 .bs-stepper .bs-stepper-header .step .bs-stepper-circle{
+    color: #161616 !important;
+    background-color: #1A5572 !important ;
+}
+.custom-course-generaltable2 .bs-stepper .bs-stepper-header .step:first-child  .bs-stepper-label ,  .custom-course-generaltable3 .bs-stepper .bs-stepper-header .step .bs-stepper-label{
+    color: #84b8d2 !important;
+}
+.dark-theme#page-local-course_templates-index .custom-course-generaltable2 .bs-stepper .bs-stepper-header .step:first-child  .bs-stepper-label , .dark-theme#page-local-course_templates-index .custom-course-generaltable3 .bs-stepper .bs-stepper-header .step .bs-stepper-label{
+    color: #1A5572 !important;
+}
+/* table header close */
+.custom-course-template #region-main table.generaltable{
+    background-color: transparent !important;
+    color: #333 !important;
+}
+.custom-course-template #region-main table.generaltable td{
+    font-size: 14px;
+    background-color: #fff !important;
+    color: #333 !important;
+    padding: 16px;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main table.generaltable td{
+    background-color: #161616 !important;
+    color: #bfbfbf !important;
+}
+.dark-theme#page-local-course_templates-index .custom-course-generaltable1 a.accent-blue.font-w-600 {
+    color: #2885B2;
+}
+.dark-theme#page-local-course_templates-index .custom-course-generaltable1 a.accent-blue.font-w-600:hover {
+    color: #3399FF;
+}
+.custom-course-template #region-main .custom-course-generaltable1 table.generaltable td:nth-child(1){
+    background-image: url(pix/course-firstchild-table.svg);
+    background-repeat: no-repeat;
+    padding: 22px 0 0 60px;
+    background-attachment: initial;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 50px 38px;
+    width: 67%;
+    height: 48px;
+    text-transform: capitalize !important;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main .custom-course-generaltable1 table.generaltable td:nth-child(1){
+    background-image: url(pix/darktheme-course-firstchild-table.svg);
+}
+.custom-course-template #region-main table.generaltable td:nth-child(2){
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    padding: 20px 0 20px 0;
+}
+.custom-course-template #region-main table.generaltable td:nth-child(2) a.template_preview{
+    color: #1077A9 !important;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    font-family: "Space Grotesk Bold",-apple-system,BlinkMacSystemFont,Roboto,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"!important;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main table.generaltable td:nth-child(2) a.template_preview{
+    color: #2885B2 !important;
+}
+.custom-course-template #region-main table.generaltable td:nth-child(2)::before{
+        content: "\f06e";
+     font-family: 'FontAwesome';
+     margin-right: 8px;
+     color: #1077A9;
+     cursor: pointer;
+     font-weight: 500;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main table.generaltable td:nth-child(2)::before{
+    color: #2885B2 ;
+}
+.custom-course-template #region-main table.generaltable td:nth-child(3){
+    width: 21%;
+}
+.custom-course-template #region-main table.generaltable td:nth-child(3) .btn.btn-round.btn-primary{
+    border: 1.5px solid #1077A9 !important;
+    color: #1077A9 !important;
+    background-color: transparent !important;
+    font-weight: 600;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main table.generaltable td:nth-child(3) .btn.btn-round.btn-primary{
+    border: 1.5px solid #2885B2 !important;
+    color: #2885B2 !important;
+}
+.custom-course-template #region-main table.generaltable td:nth-child(3) .btn.btn-round.btn-primary:hover{
+    border: 1.5px solid #005AA3 !important;
+    color: #005AA3 !important;
+    background-color: transparent !important;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main table.generaltable td:nth-child(3) .btn.btn-round.btn-primary:hover{
+    border: 1.5px solid #2885B2 !important;
+    color: #2885B2 !important;
+}
+.custom-course-template #region-main table.generaltable td:nth-child(3) form{
+    margin-bottom: 0;
+}
+
+.custom-course-template #region-main table.generaltable td:nth-child(3) .form-group.row.fitem.femptylabel   {
+    margin: 0 !important;
+}
+.custom-course-template #region-main table.generaltable td:nth-child(3) .form-group.row.fitem.femptylabel   .contentlabel.col-sm-12.col-md-4.col-lg-4.col-xl-4{
+    display: none;
+}
+.custom-course-template #region-main table.generaltable td:nth-child(3) .form-group.row.fitem.femptylabel   .col-sm-12.col-md-8.col-lg-8.col-xl-8.felement{
+    padding: 0 !important;
+}
+
+/*
+.custom-course-template #region-main table.generaltable 2{
+ */
+ .custom-course-generaltable2 .tooltip-status{
+    top: 4px;
+    left: 127px;
+}
+.custom-course-generaltable2 .tooltip-status .tooltiptext{
+    top: -40px;
+    box-shadow: 0px -1px 8px rgb(0 0 0 / 5%), 0px 4px 8px rgb(0 0 0 / 8%);
+    border-radius: 4px;
+    color: #333;
+    background: #fff;
+    right: unset;
+    left: -114px;
+    min-width: 212px;
+    display: block;
+}
+
+.custom-course-generaltable2 .tooltip-status .tooltiptext .border-tooltip{
+    top: 30px;
+    border-top-color: #fff;
+    left: unset;
+    right: 83px;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol{
+    background-image: unset;
+    background-repeat: unset;
+    padding: 20px 0 20px 0;
+    background-attachment: unset;
+    background-clip: unset;
+    background-origin: unset;
+    background-position: unset;
+    background-repeat: unset;
+    background-size: unset;
+    width: 67%;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form{
+    margin-bottom: 0 !important;
+    position: relative;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem   {
+    position: relative;
+    margin: 0  !important;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form  .form-group.row.fitem .contentlabel{
+    padding:  0 !important;
+    flex: 100%;
+    max-width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form  .form-group.row.fitem .contentlabel label{
+    padding: 0 0 !important;
+    font-size: 14px !important;
+    color: #333 !important;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form  .form-group.row.fitem .contentlabel label{
+    color: #bfbfbf !important;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form  .form-group.row.fitem .contentlabel label::after{
+    content: " * ";
+    padding: 0;
+    font-size: 15px;
+    color: red;
+
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form  .form-group.row.fitem .contentlabel .options {
+    padding-right: 0 !important;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form  .form-group.row.fitem .contentlabel .options .required-element .fa-exclamation-circle{
+    transform: rotate(180deg);
+    color: #868686 !important;
+    margin-left: 8px;
+    display: none;
+}
+
+
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem   .felement{
+    padding: 16px 0 !important;
+    flex: 100%;
+    max-width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol  .form-group.row.fitem .felement  input.form-control{
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    min-height: 38px;
+    height: 38px;
+    position: relative;
+    -webkit-appearance: unset;
+    -moz-appearance: unset;
+    appearance: unset;
+    outline: unset;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    width: 100% !important;
+    min-width: 340px;
+    background: #fff!important;
+    padding: 8px 8px;
+    border: 1px solid #e7e7e7!important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem .felement  .form-autocomplete-downarrow{
+    top: 16px !important;
+    right: 11px !important;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem .felement div.autocomplete_selection{
+    max-width: 400px;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem .felement div.autocomplete_selection > .form-autocomplete-downarrow .wid-icon-arrowvit{
+    font-size: 6px !important;
+    z-index: 9;
+    color: #686868 !important
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem .felement .autocomplete_selection:after {
+    position: absolute;
+    content: "";
+    top: 16px;
+    right: 7px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #686868 transparent transparent transparent;
+    background-color: #fff;
+    pointer-events: none;
+    z-index: 9;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem .felement .autocomplete_selection:after{
+    background-color: #161616;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem   .felement  .form-autocomplete-selection.w-100 {
+    order: 2;
+    margin-top: 12px;
+    margin-left: 0;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem   .felement  .form-autocomplete-selection.w-100   .badge.badge-info{
+    border: 1px solid #1077a9;
+    background: #FAFBFC;;
+    color: #1077a9;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 6px 26px 6px 16px;
+    margin-bottom: 0 !important;
+    margin-right: 16px !important;
+    font-size: 11px;
+    position: relative;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem   .felement  .form-autocomplete-selection.w-100   .badge.badge-info{
+    border: 1px solid #2885B2;
+    background: #161616;;
+    color: #2885B2;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem   .felement  .form-autocomplete-selection.w-100   span.badge.badge-info > span{
+    display: inline-block;
+    color: #484848;
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form  .form-group.row.fitem .contentlabel .options .buttonhelp{
+    display: none;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form  .form-group.row.fitem.femptylabel  {
+    flex-direction: row;
+    width: 100%;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form  .form-group.row.fitem.femptylabel  .contentlabel label::after{
+    display: none;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem.femptylabel .felement{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem.femptylabel .felement .form-group.fitem  {
+    margin-bottom: 0 !important;
+    margin-right: 12px;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem.femptylabel .felement .form-group.fitem  .btn.btn-secondary.btn-round{
+    padding: 4px 16px !important;
+    height: 32px !important;
+    min-width: 88px;
+    line-height: 16px;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem.femptylabel .felement .form-group.fitem #id_back{
+    background-color: transparent !important;
+    color: #1077A9 !important;
+    border: 1px solid transparent !important;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem.femptylabel .felement .form-group.fitem #id_back{
+    background-color: transparent !important;
+    color: #2885B2 !important;
+}
+.custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol form .form-group.row.fitem.femptylabel .felement .form-group.fitem    #id_coursecategorieslistsubmit{
+     min-width: 88px;
+     height: 32px !important;
+     font-size: 14px ;
+     line-height: 16px;
+}
+.custom-course-template #region-main  .custom-course-generaltable3 .bs-stepper table.generaltable{
+    padding: 20px;
+}
+.custom-course-template #region-main  .custom-course-generaltable3 .bs-stepper table.generaltable tr{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    background-color: transparent !important;
+}
+
+.custom-course-template #region-main .custom-course-generaltable3 .bs-stepper table.generaltable td:nth-child(1){
+    background-image: unset;
+    background-repeat: unset;
+    padding: 16px 0 13px 0;
+    background-attachment: unset;
+    background-clip: unset;
+    background-origin: unset;
+    background-position: unset;
+    background-repeat: unset;
+    background-size: unset;
+    width: 100%;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main .custom-course-generaltable3 .bs-stepper table.generaltable td:nth-child(1) > label{
+    color: #bfbfbf !important;
+}
+.custom-course-template #region-main .custom-course-generaltable3 .bs-stepper table.generaltable td:nth-child(1) > label{
+    margin-bottom: 0;
+    color: #333 !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+.custom-course-template #region-main .custom-course-generaltable3 .bs-stepper table.generaltable td:nth-child(1) > label::after{
+    content: " * ";
+    padding: 0;
+    font-size: 15px;
+    color: red;
+}
+.custom-course-template #region-main  .custom-course-generaltable3 .bs-stepper table.generaltable td:nth-child(2){
+    display: none;
+}
+.custom-course-template #region-main  .custom-course-generaltable3 .bs-stepper table.generaltable td:nth-child(3){
+    padding: 2px 0;
+    width: 100%;
+    max-width: 400px;
+}
+.custom-course-template #region-main  .custom-course-generaltable3 .bs-stepper table.generaltable td:nth-child(3) input{
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    min-height: 38px;
+    height: 38px;
+    position: relative;
+    -webkit-appearance: unset;
+    -moz-appearance: unset;
+    appearance: unset;
+    outline: unset;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    width: 100% !important;
+    min-width: 340px;
+    background: #fff!important;
+    padding: 8px 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.custom-course-template #region-main  .custom-course-generaltable3 .bs-stepper table.generaltable tr:last-child{
+    display: none;
+}
+.custom-course-template #region-main  .custom-course-generaltable3 .bs-stepper > p:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.custom-course-generaltable3 .bs-stepper p{
+    display: flex;
+    width: 100%;
+}
+.custom-course-template #region-main .custom-course-generaltable3 .bs-stepper p > input:first-child{
+    background-color: transparent !important;
+    color: #1077A9 !important;
+    border: 1px solid transparent !important;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    text-align: right;
+}
+.dark-theme#page-local-course_templates-index  .custom-course-template #region-main  .custom-course-generaltable3 .bs-stepper  p > input:first-child {
+    background-color: transparent !important;
+    color: #2885B2 !important;
+}
+.custom-course-template #region-main  .custom-course-generaltable3 .bs-stepper  p > #btnProcess{
+    height: 32px !important;
+    min-width: 130px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.dark-theme#page-local-course_templates-index .custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol .form-group.row.fitem .felement input.form-control,.dark-theme#page-local-course_templates-index .custom-course-template #region-main .custom-course-generaltable3 .bs-stepper table.generaltable td:nth-child(3) input{
+    background-color: #161616 !important;
+    border: 1px solid #292929;
+    color: #bfbfbf;
+}
+
+.custom_note {
+    background: #fafbfc;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    padding: 24px;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 106px;
+    line-height: 18px;
+}
+
+.custom-course-generaltable2 .bs-stepper table.generaltable form .form-autocomplete-suggestions{
+    background-color: #fff;
+    width: 43%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+body.dark-theme .custom-course-generaltable2 .bs-stepper table.generaltable form .form-autocomplete-suggestions{
+    background-color: #212121;
+}
+.custom-course-generaltable3 .bs-stepper{
+    position: relative;
+}
+.custom-course-generaltable3 .bs-stepper table.generaltable{
+    width: 60%;
+    min-height: 300px;
+}
+.custom-course-generaltable1 .bs-stepper .singleselect.d-inline-block .custom-select.singleselect{
+    background-color: transparent !important;
+    border: 1px solid #e7e7e7 !important;
+    -webkit-box-shadow: unset!important;
+    box-shadow: unset!important;
+    min-height: 38px;
+    height: 38px;
+    position: relative;
+    -webkit-appearance: unset;
+    -moz-appearance: unset;
+    appearance: unset;
+    outline: unset;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    padding: 8px 8px;
+    font-size: 14px;
+}
+body.dark-theme .custom-course-generaltable1 .bs-stepper .singleselect.d-inline-block .custom-select.singleselect{
+
+    border: 1px solid #292929 !important;
+
+}
+body.dark-theme .custom_note {   background: #212121;   border: 1px solid #292929; }
+body.dark-theme     .custom_note    .grey-text-color {   color: #898989!important;
+}
+body.dark-theme     .custom_note {  background: #212121;  border: 1px solid #292929; }
+@media screen and (max-width: 768px ) {
+    #page-local-course_templates-index #region-main{
+        margin-top: 20px;
+    }
+    #page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header{
+        padding: 12px 12px;
+        margin-left: -17px;
+        margin-right: -17px;
+        margin-top: 16px;
+        justify-content: space-between;
+    }
+    #page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .line{
+        display: none;
+    }
+    #page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .step-trigger{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #page-local-course_templates-index #region-main .bs-stepper .bs-stepper-header .step .bs-stepper-circle{
+        font-size: 12px;
+        line-height: 27px;
+        width: 26px;
+        height: 26px;
+    }
+    #page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .bs-stepper-label{
+        font-size: 12px;
+    }
+    #page-local-course_templates-index .custom-course-template #region-main .bs-stepper .bs-stepper-header .line::after{
+        display: none;
+    }
+    .custom-course-template #region-main table.generaltable{
+        display: block;
+    }
+
+    .custom-course-template #region-main  table.generaltable tbody{
+        display: block;
+    }
+    .custom-course-template #region-main  table.generaltable tbody tr{
+        display: block;
+    }
+
+    .custom-course-template #region-main .custom-course-generaltable1 table.generaltable td:nth-child(1){
+        width: 100%;
+        display: block;
+    }
+    .custom-course-template #region-main .custom-course-generaltable1 table.generaltable td:nth-child(2){
+        padding: 10px 0 10px 60px;
+    }
+    .custom-course-template #region-main .custom-course-generaltable1 table.generaltable td:nth-child(3){
+        padding: 0 0 !important;
+       }
+    .custom-course-template #region-main .custom-course-generaltable1 table.generaltable td:nth-child(3) form{
+        padding: 0 !important;
+    }
+    .custom-course-template #region-main .custom-course-generaltable1 table.generaltable td:nth-child(3) .btn.btn-round.btn-primary{
+        min-width: 140px !important;
+        width: 140px !important;
+        margin: 0 0 !important;
+    }
+    .custom-course-template #region-main .custom-course-generaltable2 table.generaltable td:nth-child(1) form{
+        padding: 0 !important;
+
+    }
+    .custom-course-template #region-main .custom-course-generaltable2 table.generaltable td:nth-child(2){
+        display: block;
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+    .custom-course-template #region-main table.generaltable tr.lastrow td:nth-child(1).cell.c0.lastcol .form-group.row.fitem .felement input.form-control , .custom-course-template #region-main .custom-course-generaltable3 .bs-stepper table.generaltable td:nth-child(3) input{
+        min-width: 100% !important;
+    }
+    .custom-course-template #region-main .custom-course-generaltable3 .bs-stepper table.generaltable{
+        padding: 0;
+    }
+    .custom-course-template #region-main .custom-course-generaltable3 .bs-stepper p > input:first-child{
+        width: 44.5%;
+    }
+.custom_note {
+    right: unset;
+    top: unset;
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+    padding: 20px;
+    order: 5;
+}
+.custom-course-generaltable3 .bs-stepper {
+    display: flex;
+    flex-direction: column;
+
+}
+.custom-course-generaltable3 .bs-stepper table.generaltable{
+    min-height: unset;
+    width: 100%;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 600px) {
+    .custom-course-template #region-main .custom-course-generaltable3 .bs-stepper p > input:first-child{
+        width: 36.5%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
