@@ -1,0 +1,83 @@
+.course-notification-block {
+    background: #f9f9f9;
+    padding: 20px 0;
+}
+.course-notification-block .course-info-block a {
+    font-size: 14px;
+    padding: 15px 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+.course-notification-block .course-info-block .logo-block a {
+    text-transform: uppercase;
+    display: inline-block;
+}
+.course-notification-block .course-info-block {
+    max-width: 400px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 50px auto;
+}
+.course-notification-block .course-info-block .content-block {
+    margin: 50px 0 10px;
+}
+.course-notification-block .course-info-block .content-block p {
+    font-weight: bold;
+}
+.course-notification-block .course-info-block .content-block p span {
+    width: 100%;
+    font-size: 14px;
+    font-weight: normal;
+    color: #999;
+    margin-top: 15px;
+    display: inline-block;
+}
+.course-notification-block .course-info-block .content-block .btn-block {
+    margin-top: 60px;
+}
+.course-notification-block .course-info-block .content-block .btn-block button {
+    padding: 10px 30px;
+}
+
+.pulse-report-selector-parent .pulse-report-wrapper .form-group label,
+.pulse-report-selector-parent .pulse-report-wrapper .form-group {
+    margin-right: 15px;
+}
+
+.pulse-report-selector-parent {
+    margin-bottom: 25px;
+}
+
+#page-local-pulsepro-reaction #page {
+    margin-top: 0;
+}
+
+.path-course-view .pulse-completion-btn div {
+    display: inline;
+}
+#page-local-pulsepro-report span.invitation-list {
+    display: block;
+}
+#page-local-pulsepro-report label.previous-reminders {
+    color: #848484;
+    margin-top: 10px;
+    display: block;
+}
+#page-local-pulsepro-reaction #page-footer {
+    display: none;
+}
+
+#page-local-pulsepro-presets .availability-field.fcontainer {
+    display: none;
+}
+.preset-config-params span.config-param {
+    display: block;
+}
+
+#page-mod-pulse-mod .credits-field-pending {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+}
