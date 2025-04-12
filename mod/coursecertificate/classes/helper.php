@@ -136,7 +136,8 @@ class helper {
         $expirydate = certificate::calculate_expirydate(
             $coursecertificate->expirydatetype,
             $coursecertificate->expirydateoffset,
-            $coursecertificate->expirydateoffset
+	    $coursecertificate->expirydateoffset,
+	    $course->startdate
         );
         return $template->issue_certificate($user->id, $expirydate, $issuedata, 'mod_coursecertificate', $course->id, $lock);
     }

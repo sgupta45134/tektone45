@@ -170,6 +170,9 @@ class course_edit_form extends moodleform {
         }
         $mform->addElement('date_time_selector', 'enddate', get_string('enddate'), array('optional' => true));
         $mform->addHelpButton('enddate', $enddatestring);
+        
+        $mform->addElement('date_time_selector', 'timeregclosed', get_string('timeregclosed'), array('optional' => true));
+        $mform->addHelpButton('timeregclosed', 'timeregclosed');
 
         if (!empty($CFG->enablecourserelativedates)) {
             $attributes = [

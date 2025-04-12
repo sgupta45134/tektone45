@@ -638,8 +638,8 @@ class certificate {
      * @return int expiry date timestamp
      * @throws coding_exception
      */
-    public static function calculate_expirydate(int $datetype, ?int $absolutedate = null, ?int $duration = null): int {
-        switch ($datetype) {
+    public static function calculate_expirydate(int $datetype, ?int $absolutedate = null, ?int $duration = null, $coursestartdate= null): int {
+	    switch ($datetype) {
             case self::DATE_EXPIRATION_NEVER:
                 $expirydate = 0;
                 break;
@@ -652,8 +652,8 @@ class certificate {
             case self::DATE_EXPIRATION_AFTER:
                 if ($duration === null) {
                     throw new coding_exception('duration parameter expected but not found');
-                }
-                $expirydate = time() + $duration;
+		}
+                $expirydate = $coursestartdate + $duration;
                 break;
             default:
                 throw new coding_exception('unexpected expiry date type');

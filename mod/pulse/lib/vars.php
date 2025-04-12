@@ -202,7 +202,8 @@ class pulse_email_vars {
         global $CFG;
 
         if (empty($CFG->allowthemechangeonurl)) {
-            return $this->course->url;
+		//return $this->course->url;
+		return 'https://training.tektone.com/course/view.php?id='.$this->course->id;
         } else {
             return new moodle_url($this->course->url);
         }
