@@ -760,8 +760,32 @@ class core_course_renderer extends plugin_renderer_base {
 
         if (!empty($pagingbar)) {
             $content .= $pagingbar;
-        }
+	}
 
+
+        //Add by sudhanshu gupta to apply the dropdown
+        global $OUTPUT, $DB;
+        $sortid = optional_param('sort', 0, PARAM_INT);
+        $categories = $DB->get_records_menu('course_categories', array('visible' => 1));
+        $choose = array(0=>'ALL');
+        $sort_type = $choose + $categories;
+        echo $OUTPUT->single_select(new moodle_url('', array()), 'sort', $sort_type, $sortid, '', '', array('label'=>'Sort Courses'));
+        $course_list = array_keys($DB->get_records_menu('course',array('category' => $sortid) ));
+        $coursecount = 0;
+        foreach ($courses as $key => $course) {
+            if ($sortid > 0 && !in_array($key, $course_list)) continue;
+            $coursecount ++;
+            $classes = ($coursecount%2) ? 'odd' : 'even';
+            if ($coursecount == 1) {
+                $classes .= ' first';
+            }
+            if ($coursecount >= count($courses)) {
+                $classes .= ' last';
+            }
+            $content .= $this->coursecat_coursebox($chelper, $course, $classes);
+        }
+       //End of code customized by Sudhanshu Gupta
+	
         $coursecount = 0;
         foreach ($courses as $course) {
             $coursecount ++;

@@ -200,3 +200,63 @@ function theme_tektone_update_settings_images($settingname) {
                                                                                                                                    
     theme_reset_all_caches();                                                                                                       
 }
+
+
+/*
+ * theme Get self instance
+ */
+
+function theme_tektone_get_selfinstance($courseid, $type = 'self') {
+    global $DB;
+    $self = enrol_selfenrol_available($courseid);
+    if ($self) {
+        $instance = $DB->get_record('enrol', array('courseid' => $courseid, 'status' => ENROL_INSTANCE_ENABLED, 'enrol' => $type), 'sortorder,id, customint3');
+        if (!empty($instance)) {
+            $nofoenrolledusers = $DB->get_records('user_enrolments', array('enrolid' => $instance->id));
+            return count($nofoenrolledusers) . ' / ' . $instance->customint3;
+        }
+        return null;
+    }
+    return null;
+}
+/*
+ * theme Get self instance
+ */
+
+function theme_tektone_get_selfinstance_forenrolled($courseid) {
+    global $DB;
+    $result = false;
+    $plugins = enrol_get_plugins(true);
+    $enrolinstances = enrol_get_instances($courseid, true);
+    foreach($enrolinstances as $instance) {
+        if (!isset($plugins[$instance->enrol])) {
+            continue;
+        }
+        if ($instance->enrol === 'guest') {
+            continue;
+        }
+        $enroltype = '';
+        if ($plugins[$instance->enrol] && $instance->enrol == 'self') {
+            $result = true;
+            $enroltype = "self";
+            break;
+        }
+
+        if ($plugins[$instance->enrol] && $instance->enrol == 'stripepayment') {
+            $result = true;
+            $enroltype = "stripepayment";
+            break;
+        }
+    }
+
+    if ($result) {
+        $instance = $DB->get_record('enrol', array('courseid' => $courseid, 'status' => ENROL_INSTANCE_ENABLED, 'enrol' => $enroltype), 'sortorder,id, customint3');
+        if (!empty($instance)) {
+            $nofoenrolledusers = $DB->get_records('user_enrolments', array('enrolid' => $instance->id));
+            return count($nofoenrolledusers) . ' / ' . $instance->customint3;
+        }
+        return null;
+    }
+    return null;
+}
+

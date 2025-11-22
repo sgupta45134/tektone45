@@ -151,7 +151,7 @@ function local_pulsepro_extend_pulse_form($mform, $instance, $method='') {
     $mform->setType('first_subject', PARAM_RAW);
     $mform->addHelpButton('first_subject', 'remindersubject', 'mod_pulse');
 
-    $editoroptions  = pulse_get_editor_options();
+    $editoroptions  = null;// pulse_get_editor_options();
     $mform->addElement('editor', 'first_content_editor', get_string('remindercontent', 'pulse'),
     ['class' => 'fitem_id_templatevars_editor'], $editoroptions);
     $mform->setType('first_content_editor', PARAM_RAW);
@@ -282,7 +282,7 @@ function local_pulsepro_extend_pulse_postprocessing(&$data) {
 function local_pulsepro_extend_pulse_preprocessing(&$defaultvalues, $currentinstance, $context) {
     global $DB;
     $notifications = ['first', 'second', 'recurring'];
-    $editoroptions = pulse_get_editor_options();
+    $editoroptions = null;//pulse_get_editor_options();
     if (!isset($defaultvalues['id']) || $defaultvalues['id'] == null) {
         return '';
     }

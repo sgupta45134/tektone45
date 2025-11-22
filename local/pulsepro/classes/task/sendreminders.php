@@ -198,7 +198,7 @@ class sendreminders extends \core\task\adhoc_task {
         self::join_notification_template($template);
 
         // Replace the email text placeholders with data.
-        list($subject, $messagehtml) = mod_pulse_update_emailvars($template, $subject, $course, $user, $pulse, $sender);
+        list($subject, $messagehtml) = \mod_pulse\helper::update_emailvars($template, $subject, $course, $user, $pulse, $sender);
         // Rewrite the plugin file placeholders in the email text.
         $messagehtml = file_rewrite_pluginfile_urls($messagehtml, 'pluginfile.php',
         $context->id, 'mod_pulse', $filearea, 0);
@@ -207,7 +207,7 @@ class sendreminders extends \core\task\adhoc_task {
         // Send message to user.
         mtrace( " Sending pulse to the user ". fullname($user) ."\n" );
         $sendto = ($sendto != null) ? $sendto : $user;
-        $messagesend = mod_pulse_messagetouser($sendto, $subject, $messageplain, $messagehtml, $pulse, $sender);
+        $messagesend = \mod_pulse\helper::messagetouser($sendto, $subject, $messageplain, $messagehtml, $pulse, $sender);
         if ($messagesend) {
             if ($type == 'invitation') {
                 if ($method == 'student') {

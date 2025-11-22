@@ -47,6 +47,8 @@ use core_availability\info;
 use moodle_page;
 use action_menu;
 use context_module;
+use core_course_list_element;
+
 require_once($CFG->dirroot . '/course/renderer.php');
 
 /**
@@ -74,8 +76,15 @@ class course_renderer extends \core_course_renderer {
             $classes .= ' collapsed';
         }
 
-        if($course->enddate > time())
-        $content .= html_writer::start_tag('div', array('class' => 'custom-grey-out'));
+      //  if($course->enddate > time())
+       // $content .= html_writer::start_tag('div', array('class' => 'custom-grey-out'));
+      if($course->enddate != 0 && $course->enddate < time()){
+          if(is_siteadmin()) {
+            $content .= html_writer::start_tag('div', array('class' => 'custom-grey-out'));
+          }else{
+              $content .= html_writer::start_tag('div', array('class' => 'custom-hide-course'));  
+          }
+	}
 
         // .coursebox
         $content .= html_writer::start_tag('div', array(
@@ -95,10 +104,56 @@ class course_renderer extends \core_course_renderer {
 
         $content .= html_writer::end_tag('div'); // .coursebox
         
-        if($course->enddate > time())
+        if($course->enddate != 0 && $course->enddate < time())
         $content .= html_writer::end_tag('div'); // add grey out class
     
         return $content;
     }
 
+    /**
+     * Returns HTML to display course content (summary, course contacts and optionally category name)
+     *
+     * This method is called from coursecat_coursebox() and may be re-used in AJAX
+     *
+     * @param coursecat_helper $chelper various display options
+     * @param stdClass|core_course_list_element $course
+     * @return string
+     */
+    protected function coursecat_coursebox_content(coursecat_helper $chelper, $course) {
+        if ($chelper->get_show_courses() < self::COURSECAT_SHOW_COURSES_EXPANDED) {
+            return '';
+        }
+        if ($course instanceof stdClass) {
+            $course = new core_course_list_element($course);
+        }
+        $content = \html_writer::start_tag('div', ['class' => 'd-flex']);
+        $content .= $this->course_overview_files($course);
+        $content .= \html_writer::start_tag('div', ['class' => 'flex-grow-1']);
+        $content .= $this->course_summary($chelper, $course);
+
+        $content .= $this->course_contacts($course);
+        $content .= $this->course_category_name($chelper, $course);
+        $content .= $this->course_custom_fields($course);
+        $content .= \html_writer::end_tag('div');
+        $content .= \html_writer::end_tag('div');
+        return $content;
+}
+
+    protected function course_custom_fields(\core_course_list_element $course): string {
+        global $DB;
+        $content = '';
+        if ($course->has_custom_fields()) {
+            $handler = \core_course\customfield\course_handler::create();
+            $customfields = $handler->display_custom_fields_data($course->get_custom_fields());
+            $content .= \html_writer::tag('div', $customfields, ['class' => 'customfields-container']);
+            if (($instance = theme_tektone_get_selfinstance($course->__get('id')) ) || $instance = theme_tektone_get_selfinstance($course->__get('id'), 'stripepayment')){
+             $data = '<div class="customfield customfield_text customfield_location"> '.
+             ' <span class="customfieldname">No of seats</span><span class="customfieldseparator">: </span>'.
+              '<span class="customfieldvalue">'.$instance.'</span></div>';
+              $content .= \html_writer::tag('div', $data, ['class' => 'customfields-container']);
+             }
+
+        }
+        return $content;
+    }
 }
